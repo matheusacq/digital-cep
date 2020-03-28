@@ -1,0 +1,23 @@
+{
+    "name": "matheus/digital-cep",
+    "description": "Busca de cep online",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matheus Augusto",
+            "email": "matheuscquaresma@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Search": "src/"
+        },
+        "psr-4": {
+            "Matheus\\DigitalCep\\" : "src/"
+        }
+    }
+}
