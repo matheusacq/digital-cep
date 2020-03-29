@@ -4,7 +4,7 @@ require_once "vendor/autoload.php";
 
 use Matheus\DigitalCep\Search;
 
-$busca = new Search;
+$busca = new Search();
 
 $resultado = $busca->getAddressFromZipcode('01001000');
 

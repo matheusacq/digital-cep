@@ -3,19 +3,22 @@
 use PHPUnit\Framework\TestCase;
 use Matheus\DigitalCep\Search;
 
-class SearchTest extends TestCase{
+class SearchTest extends TestCase
+{
 
     /**
      * @dataProvider dadosTeste
      */
-    public function testGetAddressFromZipcodeDefaulUsage(string $input, array $esperado){
-        $resultado = new Search;
+    public function testGetAddressFromZipcodeDefaulUsage(string $input, array $esperado)
+    {
+        $resultado = new Search();
         $resultado = $resultado->getAddressFromZipcode($input);
 
         $this->assertEquals($esperado, $resultado);
     }
 
-    public function dadosTeste(){
+    public function dadosTeste()
+    {
         return [
             "Endereço Paraça da Sé" => [
                 "01001000",
